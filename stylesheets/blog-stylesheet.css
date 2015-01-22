@@ -1,0 +1,32 @@
+#header {
+    text-align:center;
+    border-bottom:1px black solid;
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+h2{
+   display: inline-block;
+   border-top: 1px solid black;
+   padding: 0px;
+   margin: 0px;
+   font-size:19px;
+}
+
+h4 {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#content {
+    border-bottom:1px black solid;
+}
+
+p {
+  word-wrap: break-word;
+}
