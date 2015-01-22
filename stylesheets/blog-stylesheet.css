@@ -3,6 +3,10 @@
     border-bottom:1px black solid;
 }
 
+h1, h2, h3, h4{
+  font-family:Arimo;
+}
+
 h1{
     padding: 0px;
     margin: 0px;
@@ -14,6 +18,11 @@ h2{
    padding: 0px;
    margin: 0px;
    font-size:19px;
+}
+
+h3 {
+  font-size:17;
+  text-align:center;
 }
 
 h4 {
@@ -29,4 +38,5 @@ h4 {
 
 p {
   word-wrap: break-word;
+  font-family:Roboto Slab;
 }
