@@ -1,5 +1,4 @@
 nav, #content, #img{
-	border:1px black solid;
 	display:inline-block;
 	background-color:white;
 	text-align:center;
@@ -16,15 +15,17 @@ nav{
 	width:50%;
 	background-color: #bae3df;
 	overflow:auto;
+	border:1px white solid;
 }
 
 #img{
 	width:25%;
 	float:right;
 	position:static;
-	background-image: url("../img/ben_lana_2014.png");
-
 }
+
+
+
 
 html,body{
     height:100%;
@@ -34,14 +35,14 @@ html,body{
 }
 
 #about{
-	border-bottom:1px solid black;
+	border-bottom:1px solid white;
 	height:33%;
 	width:100%;
 	background-color:#b0f2e3;
 }
 
 #blog{
-	border-bottom:1px solid black;
+	border-bottom:1px solid white;
 	height:33%;
 	width:100%;
 	background-color:#aff5f7;
