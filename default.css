@@ -2,24 +2,42 @@ nav, #content, #img{
 	border:1px black solid;
 	display:inline-block;
 	background-color:white;
-	position:static;
 	text-align:center;
 	height:100%;
 }
 
 nav{
 	width:25%;
-	
+	position:static;
 }
 
 #content{
-	margin-left:auto;
-	margin-right:auto;
-	width:auto;
+	position:absolute;
+	width:50%;
 }
 
 #img{
 	width:25%;
 	float:right;
+	position:static;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#about{
+	border-bottom:1px solid black;
+	height:33%;
+	width:100%;
+}
+
+#blog{
+	border-bottom:1px solid black;
+	height:33%;
+	width:100%;
 }
 
