@@ -14,12 +14,16 @@ nav{
 #content{
 	position:absolute;
 	width:50%;
+	background-color: #bae3df;
+	overflow:auto;
 }
 
 #img{
 	width:25%;
 	float:right;
 	position:static;
+	background-image: url("../costolo.github.io/img/ben_lana_2014.png");
+
 }
 
 html,body{
@@ -33,11 +37,23 @@ html,body{
 	border-bottom:1px solid black;
 	height:33%;
 	width:100%;
+	background-color:#b0f2e3;
 }
 
 #blog{
 	border-bottom:1px solid black;
 	height:33%;
 	width:100%;
+	background-color:#aff5f7;
+}
+
+#contact{
+	background-color:#81d8d0;
+	height:34%;
+	width:100%;
+}
+
+a{
+	text-decoration: none;
 }
 
