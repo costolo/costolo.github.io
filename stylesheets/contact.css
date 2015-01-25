@@ -1,3 +1,16 @@
 #img{
-	background-image: url("../img/ben_lana_2014.png");
+	/*background-image: url("../img/ben_lana_2014.png");*/
+	background-color:#009688;
+}
+
+#contact-link{
+	text-decoration:none;
+	color:white;
+}
+
+#reach {
+	font-family:arimo;
+	font-size:25px;
+	color:white;
+	padding-top:30px;
 }
