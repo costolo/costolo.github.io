@@ -12,10 +12,10 @@ nav{
 
 #content{
 	position:absolute;
-	width:50%;
 	background-color: #49afa5;
 	overflow-y:auto;
 	border:3px white solid;
+	width:50%;
 }
 
 #img{

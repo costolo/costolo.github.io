@@ -1,6 +1,6 @@
 #header {
     text-align:center;
-    border-bottom:1px black solid;
+    border-bottom:1px white dotted;
 }
 
 h1, h2, h3, h4{
@@ -8,7 +8,7 @@ h1, h2, h3, h4{
 }
 
 h1{
-    padding: 0px;
+    padding-top: 10px;
     margin: 0px;
     color:white;
 }
@@ -34,8 +34,8 @@ h4 {
     color:white;
 }
 
-#content {
-    border-bottom:1px dotted solid;
+#blogpost {
+    border-bottom: 1px dotted white;
 }
 
 section p {
