@@ -6,6 +6,12 @@
 		<link href="../stylesheets/default.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 		<title>costolo</title>
+		<script src="jquery-1.11.2.min.js"></script> 
+    	<script> 
+    		$(document).ready(function(){
+      			$("#includedContent").load("t1-git-blog.html"); 
+    		});
+    	</script> 
 	</head>
 	<body>
 	<nav>
@@ -22,71 +28,7 @@
 	</nav>
 	
 	<section id="content">
-		<article>
-
-		<div id = "header">
-          <h1>CSS Positioning</h1>
-          <h2>and the construction of a website</h2>
-          <h4>25 january 2015</h4>
-        </div>
-     
-          <h3>static positioning</h3>
-            <p>
-              This is the default positining for elements, so the element will appear exactly where it should. 
-            </p>
-
-          <h3>relative positioning</h3>
-            <p>
-              Relative positioning allows for the top/bottom and left/right commands to be used in order for elements to be moved on an X/Y plane.
-
-              For instance
-              <br>
-              <br>
-              <code>
-              div1{
-                position:relative;
-                top:55px;
-                right:-80px;
-              }
-              </code>
-              <br>
-              <br>
-
-              would position div1 55 pixels from the top of the page and 80 pixels to the left of the elements static position
-            </p>
-          <h3>absolute positioning</h3>
-            <p style="border-bottom: dashed white 1px;">
-                Absolute positioning also allows for top/bottom and left/right in the same manner as relative positioning, but the key difference is that with position:absolute the element will go <b>exactly</b> where you tell it to, instead of cooperating and altering its position based on other nearby elements.
-            </p>
-
-		<div id="header">
-		    <h1>Bootcamp culture</h1>
-		    <h2>Stepping into uncharted waters</h2>
-		    <h4>17-January-2015</h4>
-		</div>
-
-		<p style="border-bottom: dashed white 1px;">
-	        What interested me in DBC over other coding bootcamps was the sense of culture that the organization instills. While I love learning programming concepts and how to code, I didn't want to jump head first into a program that was just going to pump out junior devs and nothing more. My impression of DBC over other coding bootcamps was that it was more authentic, and was much more focused on self improvement and learning than simply moulding people into a one size fits all developer model. After completing my first week of phase 0, my excitement only further grows. I really appreciate that the creator mindset is being celebrated, as I haven't really experienced much of that up until this point. I'm definitely nervous for what is to come, but it's an excited nervousness. I feel that I'm taking control of my future and defining the path that I want to follow myself, and that in and of itself drives me forward.
-	    </p>
-
-		 <div id="header">
-		    <h1>Version Control, Git, and Github</h1>
-		    <h2>A brief primer</h2>
-		    <h4>14 January 2015</h4>
-		 </div>
-
-		 <h3>What are the benefits of version control?</h3>
-      <p>
-        No matter what it is that you're looking to do, controlling different versions of your project will do nothing but make your life easier. Whether you're a musician, a writer or a 3D modeller you'll likely have run into a situation in which a change you made to your project didn't go as intended. This is why version control is so important, it allows for full creative input into a project without any repercussions. Controlling the version of your project will prevent you from ever ruining what you're working on by allowing you to make changes in a protected environment and restore previous versions of your project if need be.
-      </p>
-      <h3>How does git help you keep track of changes?</h3>
-      <p>
-          Git is comparable to a savepoint in a video game. Every time you make progress, or when you finally make it through a tough area, you save your progress so that you won't have to repeat it again. Likewise, if you know you're going into a harder portion of the game you'd want to save directly before it so that a failed attempt won't cause you too great of a setback. Git acts like this but for code. Git allows you to make changes to make branches of your code, which can be thought of as environments where changes can be made freely without worry of ruining the software as a whole. Git also allows you revert changes you've made to your code, in the event that you implement something that causes an unforeseen issue.
-      </p>
-      <h3>Why use GitHub to store your code?</h3>
-      <p style="border-bottom: dashed white 1px;">
-          Using GitHub to store your code has many benefits to it. It's always important to keep offsite backups of important files, so having your code on GitHub will allow you to have an updatable backup of your code should something happen to your machine. However, GitHub's real utility lies in how it allows developers to collaborate on projects. GitHub has been instrumental in the open source software community because it allows developers to post their code and get contributions from other developers or open source software enthusiasts. GitHub has provided a platform for open source software that makes community contribution a streamlined process.
-      </p>
+		<article id="includedContent">
 			
 		</article>
 	</section>
