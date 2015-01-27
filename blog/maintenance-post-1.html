@@ -19,7 +19,7 @@
               Creating a blog website from strictly HTML and CSS was a lot of fun and a great learning experience, but it left much to be desired in terms of functionality. Initially I had been displaying blog posts by just typing them directly into blog/index.html, but that felt redundant because I was already creating individual files for each blog post. What I wanted was a way to reference each "blogtitle.html" file within blog/index.html. 
             </p>
             <p>
-                The solution I employed for this was by utilizing a very simple jQuery script:
+                The solution I employed for this was a very simple jQuery script:
                 <br>
                 <pre style="text-align:left; color:white">
                  <br>&lt;script src=&quot;jquery-1.11.2.min.js&quot;&gt;&lt;/script&gt; <br>&lt;script&gt; <br/>$(document).ready(function(){<br/>$(&quot;#idForDiv&quot;).load(&quot;name-of-blogpost.html&quot;)<br/>});<br/>&lt;/script&gt; 
@@ -52,7 +52,7 @@
             in the directory that your index.html file is. Doing so will start a WEBrick server that can be accessed by going to localhost:8000 in your web browser.
             </p>
             <p>
-            After undergoing all of this, I finally ended up with the situation I was aiming for. From now on I can create new html files for each blog post, and then reference them in blog/index.html with a single line of jQuery. All it takes is just creating different IDs for each blog post and different corresponding divs.
+            After undergoing all of this, I finally ended up with the result I was aiming for. From now on I can create new html files for each blog post, and then reference them in blog/index.html with a single line of jQuery. All it takes is just creating different IDs for each blog post and different corresponding divs.
             </p>
 
         </div>
