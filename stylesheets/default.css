@@ -8,13 +8,15 @@ nav, #content, #img{
 nav{
 	width:25%;
 	position:relative;
+	vertical-align:middle;
 }
 
 #content{
 	position:absolute;
 	background-color: #49afa5;
 	overflow-y:auto;
-	border:3px white solid;
+	border-left:3px white solid;
+	border-right:3px white solid;
 	width:50%;
 }
 
@@ -22,6 +24,7 @@ nav{
 	width:25%;
 	float:right;
 	position:static;
+	overflow-y:auto;
 }
 
 html,body{
@@ -33,32 +36,28 @@ html,body{
 
 #about{
 	border-bottom:3px solid white;
-	height:33%;
-	width:100%;
 	background-color:#83d0c9;
 }
 
 #blog{
 	border-bottom:3px solid white;
-	height:33%;
-	width:100%;
 	background-color:#65c3ba;
 }
 
 #contact{
 	background-color:#54b2a9;
-	height:34%;
-	width:100%;
 }
 
 #about, #blog, #contact{
 	font-family:Roboto Slab;
 	font-size:25px;
 	color:white;
+	height:33.03%;
 }
 
 a{
 	text-decoration: none;
+	color:white;
 }
 
 li {
@@ -76,11 +75,22 @@ h2 {
 	font-size:90px;
 	padding:0px;
 	margin:0px;
+	font-weight:normal;
 }
+
 #work{
 	color:white;
 	border-bottom:dotted white 1px;
 	font-family:Roboto Slab;
+}
+
+#nest {
+	font-size:40px;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	color:white;
+	text-decoration:none;
 }
 
 
