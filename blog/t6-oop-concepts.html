@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <head>
+    <title>costolo</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Arimo|Roboto+Slab' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <main>
+        <div id = "header">
+          <h1>Blocks, Procs, and Lambdas</h1>
+          <h2>oh my!</h2>
+          <h4>22 february 2015</h4>
+        </div>
+      
+    <section>
+        <div id="blogpost">
+            <p>
+              Blocks, procs, and lambdas share many similarities but also many differences. At their core, each of the three are a coded set of instructions. To start things off, let's take a look at the syntax of the three. 
+            </p>
+            <h3>blocks</h3>
+            <p>
+              <code>
+              [1,2,3,4].map { |x| p x*x }
+              </code>
+              <br>
+              <br>
+              Blocks are not much more than code that is passed to a method. They aren't objects, so they can't be called themselves.
+              <br>
+              <br>
+              <code>
+              (1..100) { |x| x*3 }
+              </code>
+              <br>
+              <br>
+              The above code would result in a syntax error, as there's no method that the block is being called on.
+            </p>
+            <h3>procs</h3>
+            <p>
+                <code>
+                proc = Proc.new { |x| p x*x}
+                (1..10).each(&proc)
+                </code>
+                <br>
+                <br>
+                This would print out the results of running the proc on the range 1 through 10. And because procs are objects we can create instances of them for ease of use and to code more DRY-ly. Another benefit of procs is that you can pass multiple procs to a method, as with blocks you are limited to only one.
+            </p>
+            <h3>lambdas</h3>
+            <p>
+                <code>
+                l = lambda {|x| p x*x}
+                (1..10).each(&l)
+                </code>
+                <br>
+                <br>
+              Lambdas and procs are more similar to each other than they are to blocks. They are actually both instances of the Proc class. One fundamental difference between the two is that lambdas will check the number of arguments passed to them. A proc with too many arguments passed will only execute the code on the first argument, and not the others. A lambda with the incorrect number of arguments will throw an argument error. 
+            </p>
+            <p>
+              To close things off, blocks, procs and lambdas function similarly, but have nuanced differences. For a more in depth look, take a look at <a target = "blank" href="http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/">Adam Waxman's blog post about the differences between the three.</a> 
+            </p>
+        </div>
+          <!-- copy and paste as many sections as you want to add paragraphs -->
+      </section>
+    </main>
+  </body>
+</html>
