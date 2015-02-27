@@ -177,6 +177,9 @@ function houseKeeping() {
 		console.log("you win!")
 		kanye.x = 100000
 		kanye.y = 100000
+		setTimeout(function(){
+		clearInterval(refresh)
+		}, 15);
 	}
 }
 
