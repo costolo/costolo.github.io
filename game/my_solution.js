@@ -34,7 +34,7 @@ var dy = 50;
 var dx = 50;
 
 //draws to canvas 100 times a second
-setInterval(draw, 10)
+var refresh = setInterval(draw, 10)
 
 
 var kanye = {
