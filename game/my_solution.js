@@ -158,13 +158,20 @@ function houseKeeping() {
 		player.micEquip = true;
 	}
 
+	if (player.micEquip == false && kanye.x == mic.x && kanye.y == mic.y){
+		setTimeout(function(){
+		alert("kanye got the mic and said something dumb, you lose")
+		}, 15);
+		clearInterval(refresh)
+	}
+
 	if (player.micEquip == true) {
 		mic.x = player.x + 50
 		mic.y = player.y
 		console.log("you got the mic")
 	}
 
-	if((mic.x == kanye.x) && (mic.y == kanye.y)) {
+	if(player.micEquip == true && mic.x == kanye.x && mic.y == kanye.y) {
 		setTimeout(function(){
 		alert("you hit kanye with the mic, you win")
 		}, 15);
