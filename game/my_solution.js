@@ -1,25 +1,3 @@
- // U3.W7: Design your own Code Combat Mission
-
-// This is a solo challenge
-
-// Your mission description:
-// Overall mission: hit kanye with the mic
-// Goals: grab the mic, hit kanye with it
-// Characters: player, kanye
-// Objects: player, kanye, mic
-// Functions: draw, playerMove, aiMove, houseKeeping
-
-// Pseudocode
-// create objects for player, kanye and microphone
-// add properties to object for x/y location
-// add kanye alive property
-// add player moving and micEquip property
-// create event listener and map to wasd
-// use housekeeping method to contain misc logic
-
-// Refactored code
-
-
 //if this comment is gone then i broke git plz send help
 //initializes canvas1 & canvas2
 var a = document.getElementById('canvas');
@@ -205,14 +183,3 @@ microphone.src = "mic.jpg"
 
 t = new Image()
 t.src = "trophy.gif"
-
-
-// Reflection
-// This challenge was definitely a huge learning experience for me. I feel way more comfortable with JS than I did before
-// and I feel that I understand the relation between HTML and JS better than I did before. This challenge took me
-// a few days to complete, and I refactored as I went because I was never satisfied with my original code in the state
-// that it was in.
-//
-//
-//
-//
