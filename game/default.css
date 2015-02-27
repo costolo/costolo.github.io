@@ -1,0 +1,19 @@
+h3, h2, p {
+	font-family: Helvetica;
+}
+
+#canvas {
+	border:1px solid black;
+	height: 500px;
+	width: 500px;
+	display:inline;
+}
+
+#canvas2 {
+	position: absolute;
+	left: 0px;
+}
+
+footer {
+	text-align:center;
+}
