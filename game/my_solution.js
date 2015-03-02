@@ -138,9 +138,10 @@ function houseKeeping() {
 
 	if (player.micEquip == false && kanye.x == mic.x && kanye.y == mic.y){
 		setTimeout(function(){
-		alert("kanye got the mic and said something dumb, you lose")
+		alert("kanye got the mic, you lose")
 		}, 15);
 		clearInterval(refresh)
+		rant.play()
 	}
 
 	if (player.micEquip == true) {
@@ -170,6 +171,8 @@ function houseKeeping() {
 
 //loading images and sound file
 
+var rant = new Audio("ima.ogg")
+
 var shoulder = new Audio("shoulder.mp3") 
 
 img = new Image()
@@ -183,3 +186,5 @@ microphone.src = "mic.jpg"
 
 t = new Image()
 t.src = "trophy.gif"
+
+
