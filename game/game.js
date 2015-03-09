@@ -10,10 +10,14 @@ a.height = 500;
 a.width = 500;
 var dy = 50;
 var dx = 50;
+ctx2.fillText("test", 600, 100)
 
 //draws to canvas 100 times a second
 var refresh = setInterval(draw, 10)
+
+//array with potential coords for spawns
 var coords = [0, 50, 100, 150, 200, 300, 350, 400, 450]
+
 var kanye = {
 	x: coords[Math.floor(Math.random() * coords.length)],
 	y: coords[Math.floor(Math.random() * coords.length)],
@@ -21,7 +25,6 @@ var kanye = {
 }
 
 var mic = {
-
 	x: 250,
 	y: 250,
 }
@@ -159,6 +162,7 @@ function houseKeeping() {
 		}, 15);
 	}
 }
+
 
 //loading images and sound file
 
