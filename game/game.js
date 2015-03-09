@@ -13,11 +13,10 @@ var dx = 50;
 
 //draws to canvas 100 times a second
 var refresh = setInterval(draw, 10)
-
-
+var coords = [0, 50, 100, 150, 200, 250, 300, 350, 400, 450]
 var kanye = {
-	x: 400,
-	y: 0,
+	x: coords[Math.floor(Math.random() * coords.length)],
+	y: coords[Math.floor(Math.random() * coords.length)],
 	alive: true,
 }
 
@@ -28,8 +27,8 @@ var mic = {
 }
 
 var player = {
-    x: 0,
-    y: 0,
+    x: coords[Math.floor(Math.random() * coords.length)],
+    y: coords[Math.floor(Math.random() * coords.length)],
     micEquip: false,
     moving: false,
 }
@@ -74,9 +73,12 @@ function playerMove(evt){
 		break;
 		case 68:  /* d was pressed */
 			if (player.x + dx < a.width){ 
-			    player.x += dx;
-			    player.moving = true;
-			    houseKeeping()
+				if(player.micEquip === true && player.x === 400){
+					break;
+				}
+		    player.x += dx;
+		    player.moving = true;
+		    houseKeeping()
 		}
 		break;
 	}
@@ -121,10 +123,7 @@ function houseKeeping() {
 		console.log("player is moving x:" + player.x + " y:" + player.y)
 	}	
 
-	if (player.x == mic.x-50 && player.y == mic.y){
-		setTimeout(function(){
-		alert("you got the mic, now hit kanye with it");
-		}, 15);
+	if (player.x == mic.x && player.y == mic.y){
 		player.micEquip = true;
 	}
 
