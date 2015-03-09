@@ -9,6 +9,8 @@
 		<script src="jquery-1.11.2.min.js"></script> 
     	<script> 
     		$(document).ready(function(){
+    			$("#c8").load("c8-conflict.html");
+    			$("#t8").load("t8-tech.html");
     			$("#c7").load("c7-values.html");
     			$("#t7").load("t7-javascript.html");
     			$("#c6").load("c6-stereotype-threat.html");
@@ -41,8 +43,17 @@
 	</nav>
 	
 	<section id="content">
-	<article id = "c7"></article>
-	<article id="t7"></article>
+		<article id="c8">
+		</article>
+
+		<article id="t8">
+		</article>
+
+		<article id = "c7">
+		</article>
+
+		<article id="t7">
+		</article>
 
 		<article id="c6">
 		</article>
@@ -85,6 +96,8 @@
 		<p id="blogh2">post</h2>
 		<p id="work">archive</p>
 		<ul>
+			<li id="nest"><a href="#c8">-conflict</a></li>
+			<li id="nest"><a href="#t8">-AR & MVC</a></li>
 			<li id="nest"><a href="#c7">-values</a></li>
 			<li id="nest"><a href="#t7">-js v. ruby</a></li>
 			<li id="nest"><a href="#c6">-imposter</a></li>
