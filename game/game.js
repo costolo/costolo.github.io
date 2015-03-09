@@ -37,18 +37,9 @@ var player = {
 //draws the images onto the html canvas
 function draw(){
 	ctx.clearRect(0, 0, a.width, a.height)
-
 	ctx.beginPath();
-	ctx.drawImage(jay, player.x, player.y, 50, 50)
-	ctx.closePath();
-	ctx.fill();
-
-	ctx.beginPath();
-	ctx.drawImage(img, kanye.x, kanye.y, 50, 50)
-	ctx.closePath();
-	ctx.fill();
-
-	ctx.beginPath();
+	ctx.drawImage(jay, player.x, player.y, 50, 50);
+	ctx.drawImage(img, kanye.x, kanye.y, 50, 50);
 	ctx.drawImage(microphone, mic.x, mic.y, 50, 50);
 	ctx.closePath();
 	ctx.fill();
@@ -121,7 +112,8 @@ function aiMove() {
 	}
 }
 
-//regulates micEquip property on player, mic coords when equipped, whether kanye is alive
+//regulates micEquip property on player, mic coords when equipped, whether kanye is alive, and 
+//win/lose conditions
 function houseKeeping() {
 	aiMove()
 
