@@ -10,7 +10,7 @@ a.height = 500;
 a.width = 500;
 var dy = 50;
 var dx = 50;
-ctx2.fillText("test", 600, 100)
+var startTime = Date.now()
 
 //draws to canvas 100 times a second
 var refresh = setInterval(draw, 10)
@@ -36,6 +36,10 @@ var player = {
     moving: false,
 }
 
+// function start(){
+// 	startTime = Date.now()
+// }
+
 //draws the images onto the html canvas
 function draw(){
 	ctx.clearRect(0, 0, a.width, a.height)
@@ -48,7 +52,7 @@ function draw(){
 }
 
 //event listener for wasd input
- window.addEventListener('keydown', playerMove, true);
+window.addEventListener('keydown', playerMove, true);
 
 //moves the player
 function playerMove(evt){
@@ -58,21 +62,21 @@ function playerMove(evt){
 			    player.y -= dy;
 			    player.moving = true;
 			    houseKeeping()
-		}
+			}
 		break;
 		case 83:  /* s was pressed */
 			if (player.y + dy < a.height){ 
 			    player.y += dy;
 			    player.moving = true;
 			    houseKeeping()
-		}
+			}
 		break;
 		case 65:  /* a was pressed */
 			if (player.x - dx >= 0){ 
 			    player.x -= dx;
 			    player.moving = true;
 			    houseKeeping()
-		}
+			}
 		break;
 		case 68:  /* d was pressed */
 			if (player.x + dx < a.width){ 
@@ -82,7 +86,7 @@ function playerMove(evt){
 		    player.x += dx;
 		    player.moving = true;
 		    houseKeeping()
-		}
+			}
 		break;
 	}
 }
@@ -145,15 +149,16 @@ function houseKeeping() {
 	}
 
 	if(player.micEquip == true && mic.x == kanye.x && mic.y == kanye.y) {
+		var endTime = Date.now()
 		setTimeout(function(){
-		alert("you hit kanye with the mic, you win")
+		alert("you won in " + (endTime - startTime) + " ms")
 		}, 15);
 		kanye.alive = false
 	}
 
 	if (kanye.alive == false){
 		shoulder.play()
-		ctx2.drawImage(t, 500, 0, 500, 500);
+		ctx2.drawImage(t, 500, 0, 500, 500)
 		console.log("you win!")
 		kanye.x = 100000
 		kanye.y = 100000
@@ -162,6 +167,7 @@ function houseKeeping() {
 		}, 15);
 	}
 }
+
 
 
 //loading images and sound file
