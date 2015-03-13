@@ -11,7 +11,7 @@ a.width = 500;
 var dy = 50;
 var dx = 50;
 var startTime = Date.now()
-
+var totalTime = endTime - startTime
 //draws to canvas 100 times a second
 var refresh = setInterval(draw, 10)
 
@@ -151,7 +151,7 @@ function houseKeeping() {
 	if(player.micEquip == true && mic.x == kanye.x && mic.y == kanye.y) {
 		var endTime = Date.now()
 		setTimeout(function(){
-		alert("you won in " + (endTime - startTime) + " ms")
+		alert("you won in " + totalTime + " ms")
 		}, 15);
 		kanye.alive = false
 	}
