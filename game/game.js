@@ -11,7 +11,6 @@ a.width = 500;
 var dy = 50;
 var dx = 50;
 var startTime = Date.now()
-var totalTime = endTime - startTime
 //draws to canvas 100 times a second
 var refresh = setInterval(draw, 10)
 
@@ -35,10 +34,6 @@ var player = {
     micEquip: false,
     moving: false,
 }
-
-// function start(){
-// 	startTime = Date.now()
-// }
 
 //draws the images onto the html canvas
 function draw(){
@@ -149,7 +144,8 @@ function houseKeeping() {
 	}
 
 	if(player.micEquip == true && mic.x == kanye.x && mic.y == kanye.y) {
-		var endTime = Date.now()
+		endTime = Date.now()
+		var totalTime = endTime - startTime
 		setTimeout(function(){
 		alert("you won in " + totalTime + " ms")
 		}, 15);
