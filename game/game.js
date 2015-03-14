@@ -10,7 +10,7 @@ a.height = 500;
 a.width = 500;
 var dy = 50;
 var dx = 50;
-var startTime = Date.now()
+var keyPressCount = 0;
 //draws to canvas 100 times a second
 var refresh = setInterval(draw, 10)
 
@@ -56,21 +56,21 @@ function playerMove(evt){
 			if (player.y - dy >= 0){ 
 			    player.y -= dy;
 			    player.moving = true;
-			    houseKeeping()
+			    houseKeeping()			    
 			}
 		break;
 		case 83:  /* s was pressed */
 			if (player.y + dy < a.height){ 
 			    player.y += dy;
 			    player.moving = true;
-			    houseKeeping()
+			    houseKeeping()			    
 			}
 		break;
 		case 65:  /* a was pressed */
 			if (player.x - dx >= 0){ 
 			    player.x -= dx;
 			    player.moving = true;
-			    houseKeeping()
+			    houseKeeping() 
 			}
 		break;
 		case 68:  /* d was pressed */
@@ -120,6 +120,10 @@ function aiMove() {
 //win/lose conditions
 function houseKeeping() {
 	aiMove()
+	keyPressCount = keyPressCount + 1;
+	if (keyPressCount === 1){
+		startTime = Date.now()
+	}
 
 	if (player.moving = true) {
 		console.log("player is moving x:" + player.x + " y:" + player.y)
@@ -147,7 +151,7 @@ function houseKeeping() {
 		endTime = Date.now()
 		var totalTime = endTime - startTime
 		setTimeout(function(){
-		alert("you won in " + totalTime + " ms")
+		alert("you won in " + totalTime + " ms and with " + keyPressCount + " key presses.")
 		}, 15);
 		kanye.alive = false
 	}
