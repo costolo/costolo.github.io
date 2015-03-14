@@ -152,8 +152,9 @@ function houseKeeping() {
 		endTime = Date.now()
 		var totalTime = endTime - startTime
 		setTimeout(function(){
-		alert("you won in " + totalTime + " ms and with " + keyPressCount + " key presses.")
-		}, 15);
+		alert("you won in " + (totalTime/1000).toFixed(2) + "s and with " + keyPressCount + 
+			" key presses at " + ((keyPressCount/(totalTime/1000)).toFixed(2)) + 
+			" key presses per second.")}, 15);
 		kanye.alive = false
 	}
 
