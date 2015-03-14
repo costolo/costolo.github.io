@@ -11,6 +11,7 @@ a.width = 500;
 var dy = 50;
 var dx = 50;
 var keyPressCount = 0;
+
 //draws to canvas 100 times a second
 var refresh = setInterval(draw, 10)
 
