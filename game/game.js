@@ -41,7 +41,7 @@ function draw(){
 	ctx.clearRect(0, 0, a.width, a.height)
 	ctx.beginPath();
 	ctx.drawImage(jay, player.x, player.y, 50, 50);
-	ctx.drawImage(img, kanye.x, kanye.y, 50, 50);
+	ctx.drawImage(kanyeImg, kanye.x, kanye.y, 50, 50);
 	ctx.drawImage(microphone, mic.x, mic.y, 50, 50);
 	ctx.closePath();
 	ctx.fill();
@@ -121,7 +121,7 @@ function aiMove() {
 //win/lose conditions
 function houseKeeping() {
 	aiMove()
-	keyPressCount = keyPressCount + 1;
+	keyPressCount += 1;
 	if (keyPressCount === 1){
 		startTime = Date.now()
 	}
@@ -150,10 +150,11 @@ function houseKeeping() {
 
 	if(player.micEquip == true && mic.x == kanye.x && mic.y == kanye.y) {
 		endTime = Date.now()
-		var totalTime = endTime - startTime
+		var totalTime = ((endTime - startTime)/1000).toFixed(2)
+		var kps = (keyPressCount/totalTime).toFixed(2)
 		setTimeout(function(){
-		alert("you won in " + (totalTime/1000).toFixed(2) + "s and with " + keyPressCount + 
-			" key presses at " + ((keyPressCount/(totalTime/1000)).toFixed(2)) + 
+		alert("you won in " + totalTime + "s with " + keyPressCount + 
+			" key presses at " + kps + 
 			" key presses per second.")}, 15);
 		kanye.alive = false
 	}
@@ -161,6 +162,8 @@ function houseKeeping() {
 	if (kanye.alive == false){
 		shoulder.play()
 		ctx2.drawImage(t, 500, 0, 500, 500)
+		//ctx2.fillText(keyPressCount.toString() + " key presses", 510, 10, 100, 100)
+		//ctx2.fillText((kps.toString() + " key presses per second"), 510, 20, 100, 100)
 		console.log("you win!")
 		kanye.x = 100000
 		kanye.y = 100000
@@ -173,13 +176,11 @@ function houseKeeping() {
 
 
 //loading images and sound file
+rant = new Audio("ima.ogg")
+shoulder = new Audio("shoulder.ogg") 
 
-var rant = new Audio("ima.ogg")
-
-var shoulder = new Audio("shoulder.ogg") 
-
-img = new Image()
-img.src = "kanye.jpg"
+kanyeImg = new Image()
+kanyeImg.src = "kanye.jpg"
 
 jay = new Image()
 jay.src = "jay.png"
