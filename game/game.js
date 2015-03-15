@@ -161,9 +161,9 @@ function houseKeeping() {
 		//shoulder.play()
 		ctx2.drawImage(t, 500, 0, 500, 500)
 		ctx2.font="20px Helvetica"
-		ctx2.fillText(totalTime.toString() + " seconds", 510, 15, 500, 500)
-		ctx2.fillText(keyPressCount.toString() + " key presses", 510, 35, 500, 500)
-		ctx2.fillText(kps.toString() + " key presses per second", 510, 55, 500, 500)
+		ctx2.fillText(totalTime.toString() + " seconds", 515, 15, 500, 500)
+		ctx2.fillText(keyPressCount.toString() + " key presses", 515, 35, 500, 500)
+		ctx2.fillText(kps.toString() + " key presses per second", 515, 55, 500, 500)
 		console.log("you win!")
 		kanye.x = 100000
 		kanye.y = 100000
