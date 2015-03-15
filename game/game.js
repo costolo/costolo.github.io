@@ -153,17 +153,17 @@ function houseKeeping() {
 		var totalTime = ((endTime - startTime)/1000).toFixed(2)
 		var kps = (keyPressCount/totalTime).toFixed(2)
 		setTimeout(function(){
-		alert("you won in " + totalTime + "s with " + keyPressCount + 
-			" key presses at " + kps + 
-			" key presses per second.")}, 15);
+		alert("check that trophy son, you won")}, 15);
 		kanye.alive = false
 	}
 
 	if (kanye.alive == false){
-		shoulder.play()
+		//shoulder.play()
 		ctx2.drawImage(t, 500, 0, 500, 500)
-		//ctx2.fillText(keyPressCount.toString() + " key presses", 510, 10, 100, 100)
-		//ctx2.fillText((kps.toString() + " key presses per second"), 510, 20, 100, 100)
+		ctx2.font="20px Helvetica"
+		ctx2.fillText(totalTime.toString() + " seconds", 510, 15, 500, 500)
+		ctx2.fillText(keyPressCount.toString() + " key presses", 510, 35, 500, 500)
+		ctx2.fillText(kps.toString() + " key presses per second", 510, 55, 500, 500)
 		console.log("you win!")
 		kanye.x = 100000
 		kanye.y = 100000
