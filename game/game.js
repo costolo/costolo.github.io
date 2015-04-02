@@ -158,7 +158,7 @@ function houseKeeping() {
 	}
 
 	if (kanye.alive == false){
-		//shoulder.play()
+		shoulder.play()
 		ctx2.drawImage(t, 500, 0, 500, 500)
 		ctx2.font="20px Helvetica"
 		ctx2.fillText(totalTime.toString() + " seconds", 515, 15, 500, 500)
