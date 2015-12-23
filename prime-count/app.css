@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+@font-face {
+  font-family: bobbleboddy;
+  src: url(Bobbleboddy_light.ttf);
+}
+
+body {
+  background-color: black;
+}
+
+#ie {
+  position: absolute;
+  bottom: 0px;
+}
+
+.row {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5%;
+  display: table;
+}
+
+.form {
+  display: inline;
+}
+
+.elapsed {
+  display: none;
+  color: #006600;
+  font-family: Helvetica;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.input {
+  display: table-cell;
+  font-family: bobbleboddy;
+  text-align:center;
+  vertical-align: middle;
+  height: 30px;
+  width: 70px;
+  font-size: 20px;
+  resize: none;
+  border-color: #006600;
+  color: #006600;
+  background-color: #001900;
+  margin-bottom: 30px;
+}
+
+.input:focus {
+  border-color: #006600;
+  outline: none;
+  box-shadow: 0px 0px 50px #006600;
+}
+
+.title { 
+  text-align: center;
+  color: #006600;
+  font-size: 50px;
+}
+
+.submit {
+  margin: 20px 0 20px 0;
+  color: green;
+  background-color:black;
+  border-color:green;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+.input, .title {
+  display: inline;
+  font-family: bobbleboddy;
+}
+
+.numbers {
+  font-size: 35px;
+  text-align: center;
+  font-family: Roboto;
+}
