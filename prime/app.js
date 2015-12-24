@@ -14,12 +14,18 @@ app.getNumbers = function() {
     app.typeNumbers();
   }).error(function(err) {
     console.log(err);
+    app.errorMessage();
   });
+};
+
+app.errorMessage = function() {
+  $('.numbers').append('there was a problem with the server :( <br /> please try again').css('color', '#faebd7').hide().fadeIn();
 };
 
 app.typeNumbers = function() {
   app.formatNumbers();
   app.timeout(0);
+  $('.elapsed').html('');
   $('.elapsed').append('calculated in ' + app.response.elapsed + ' ms <br />').fadeIn('slow');
   $('.elapsed').append('delivered in ' + app.delivered + ' ms').fadeIn('slow');
 };
