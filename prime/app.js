@@ -85,7 +85,7 @@ app.matrixify = function() {
 
 app.run = function() {
   $('.numbers').hide().html('').show();
-  $('.elapsed').hide().html('').fadeIn();
+  $('.elapsed').hide().fadeIn();
   app.num = $('.input').val();
   if (filterInt(app.num)) {
     app.getNumbers();
