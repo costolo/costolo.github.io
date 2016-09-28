@@ -1,0 +1,24 @@
+.row {
+    margin-top: 10%;
+}
+
+a,
+.name {
+    font-size: 3.125em;
+}
+
+.name {
+    margin-bottom: 0px;
+}
+
+.summary {
+    margin: 0px;
+}
+
+.hiddenlink {
+    text-decoration: none;
+}
+
+.job {
+    font-size: 14px !important;
+}
