@@ -2,9 +2,10 @@
     margin-top: 10%;
 }
 
-a,
+#gmailcontainer,
+#github,
 .name {
-    font-size: 3.125em;
+    font-size: 50px;
 }
 
 .name {
