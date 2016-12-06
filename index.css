@@ -1,25 +1,48 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #e3e3e3;
+}
+
+.name,
+.summary {
+  color: #b26e6e;
+}
+
+.job,
+#github,
+#gmail {
+  color: #94c1a5;
+  text-decoration: none !important;
+}
+
+#github:hover,
+#gmail:hover {
+  color: #337ab7
+}
 .row {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 #gmailcontainer,
 #github,
 .name {
-    font-size: 50px;
+  font-size: 6.5vh;
 }
 
 .name {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .summary {
-    margin: 0px;
+  margin: 0px;
+  font-size: 2.2vh;
 }
 
 .hiddenlink {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.job {
-    font-size: 14px !important;
-}
