@@ -5,6 +5,7 @@ body {
   padding: 0px;
   margin: 0px;
   background: #ccc;
+  overflow: hidden;
 }
 
 .header {
@@ -24,12 +25,6 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-}
-
-@media only screen and (max-width:420px) { 
-  .content-container {
-    height: 60% !important;
-  }
 }
 
 .content {
@@ -53,6 +48,11 @@ body {
 
 .content-job-link {
   text-decoration: none;
+  color: black;
+}
+
+.content-job-link:hover {
+  color: white;
 }
 
 .content-social-icons {
