@@ -37,12 +37,12 @@ body {
 }
 
 .content-name {
-  font-size: 5em;
+  font-size: 8vw;
   font-family: Roboto;
 }
 
 .content-job {
-  font-size: 2.5em;
+  font-size: 4vw;
   font-family: 'Open Sans';
 }
 
