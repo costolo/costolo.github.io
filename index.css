@@ -1,17 +1,25 @@
+:root {
+  --main-bg-color: #f6f6f6;
+  --header-bg-color: #ffffff;
+  --header-text-color: #0173b6;
+  --job-text-color: black;
+  --job-text-hover-color: #ff782f;
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
   padding: 0px;
   margin: 0px;
-  background: #ccc;
+  background: var(--main-bg-color);
   overflow: hidden;
 }
 
 .header {
-  background: floralwhite;
+  background: var(--header-bg-color);
   height: 75px;
-  color: #666;
+  color: var(--header-text-color);
   font-family: 'Ubuntu';
   font-size: 3em;
   display: flex;
@@ -41,6 +49,10 @@ body {
   font-family: Roboto;
 }
 
+.content-name span {
+  color: var(--job-text-hover-color);
+}
+
 .content-job {
   font-size: 4vw;
   font-family: 'Open Sans';
@@ -48,11 +60,11 @@ body {
 
 .content-job-link {
   text-decoration: none;
-  color: black;
+  color: var(--job-text-color);
 }
 
 .content-job-link:hover {
-  color: white;
+  color: var(--job-text-hover-color);
 }
 
 .content-social-icons {
@@ -66,7 +78,7 @@ body {
 
 .circle {
   font-size: 3vw;
-  color: black;
+  color: var(--job-text-color);
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -74,5 +86,5 @@ body {
 }
 
 .circle:hover {
-  color: white;
+  color: var(--job-text-hover-color);
 }
