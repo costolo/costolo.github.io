@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>shader cube</title>
+    <link rel="stylesheet" href="app.css" type="text/stylesheet">
+  </head>
+  <body>
+    <script type="text/javascript" src="three.min.js"></script>
+    <script id="vertexShader" type="x-shader/x-fragment">
+      void main()
+      {
+          gl_Position = vec4(position, 1.0);
+      }
+    </script>
+    <script id="fragmentShader" type="x-shader/x-fragment">
+      #ifdef GL_ES
+      precision mediump float;
+      #endif
+
+      #define PI 3.14159265359
+
+      uniform vec2 u_resolution;
+      uniform float u_time;
+
+      // Plot a line on Y using a value between 0.0-1.0
+      float plot(vec2 st, float pct)
+      {
+          return smoothstep(pct-0.6, pct, st.y) - 
+          smoothstep(pct, pct+0.6, st.y);
+      }
+
+      void main()
+      {
+          vec2 st = gl_FragCoord.xy/u_resolution;
+
+          float y = mod(sin((st.x * PI) + u_time) * 2.0, 0.5);
+
+          vec3 color = vec3(y);
+
+          // Plot a line
+          float pct = mod(cos(plot(st,y) + u_time), 0.5);
+          color = (1.0-pct)*color+pct*vec3((tan(u_time * 0.5)),0.0,1.0);
+
+          gl_FragColor = vec4(color,1.0);
+          gl_FragColor = vec4(1.0, 0.0, 1.0, 1.0);
+      }
+
+    </script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
