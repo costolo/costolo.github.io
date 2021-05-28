@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/operation-devin-freedom/static/css/main.340f7337.chunk.css",
-    "main.js": "/operation-devin-freedom/static/js/main.920ea6b5.chunk.js",
-    "main.js.map": "/operation-devin-freedom/static/js/main.920ea6b5.chunk.js.map",
-    "runtime-main.js": "/operation-devin-freedom/static/js/runtime-main.49cd5cc6.js",
-    "runtime-main.js.map": "/operation-devin-freedom/static/js/runtime-main.49cd5cc6.js.map",
-    "static/js/2.3d1f4f13.chunk.js": "/operation-devin-freedom/static/js/2.3d1f4f13.chunk.js",
-    "static/js/2.3d1f4f13.chunk.js.map": "/operation-devin-freedom/static/js/2.3d1f4f13.chunk.js.map",
-    "static/js/3.f3531c2b.chunk.js": "/operation-devin-freedom/static/js/3.f3531c2b.chunk.js",
-    "static/js/3.f3531c2b.chunk.js.map": "/operation-devin-freedom/static/js/3.f3531c2b.chunk.js.map",
-    "index.html": "/operation-devin-freedom/index.html",
-    "static/css/main.340f7337.chunk.css.map": "/operation-devin-freedom/static/css/main.340f7337.chunk.css.map",
-    "static/js/2.3d1f4f13.chunk.js.LICENSE.txt": "/operation-devin-freedom/static/js/2.3d1f4f13.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/operation-devin-freedom/static/media/unknown.dcfb7eaf.png"
+    "main.css": "/static/css/main.6bf6b548.chunk.css",
+    "main.js": "/static/js/main.920ea6b5.chunk.js",
+    "main.js.map": "/static/js/main.920ea6b5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5e0c33db.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5e0c33db.js.map",
+    "static/js/2.3d1f4f13.chunk.js": "/static/js/2.3d1f4f13.chunk.js",
+    "static/js/2.3d1f4f13.chunk.js.map": "/static/js/2.3d1f4f13.chunk.js.map",
+    "static/js/3.f3531c2b.chunk.js": "/static/js/3.f3531c2b.chunk.js",
+    "static/js/3.f3531c2b.chunk.js.map": "/static/js/3.f3531c2b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6bf6b548.chunk.css.map": "/static/css/main.6bf6b548.chunk.css.map",
+    "static/js/2.3d1f4f13.chunk.js.LICENSE.txt": "/static/js/2.3d1f4f13.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/unknown.dcfb7eaf.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.49cd5cc6.js",
+    "static/js/runtime-main.5e0c33db.js",
     "static/js/2.3d1f4f13.chunk.js",
-    "static/css/main.340f7337.chunk.css",
+    "static/css/main.6bf6b548.chunk.css",
     "static/js/main.920ea6b5.chunk.js"
   ]
 }
